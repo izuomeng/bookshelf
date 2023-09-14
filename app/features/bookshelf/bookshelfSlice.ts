@@ -8,7 +8,7 @@ export interface IBook {
 }
 
 const initialState = {
-  books: [{ id: '1', name: 'Three Body', price: '$1.45', category: 'fiction' }] as IBook[]
+  books: [{ id: '1', name: 'Three Body', price: '1.45', category: 'fiction' }] as IBook[]
 };
 
 export const counterSlice = createSlice({

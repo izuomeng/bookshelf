@@ -18,7 +18,7 @@ const BookShelf: React.FC = (props) => {
       dispatch(update(values));
     } else {
       // create
-      dispatch(add(values));
+      dispatch(add({ ...values, id: Math.random().toString(36).slice(2, 9) }));
     }
     setOpen(false);
     setSelectedBook(undefined);
